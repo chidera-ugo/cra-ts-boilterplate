@@ -1,6 +1,6 @@
-import Head from "next/head"
 import { FC, PropsWithChildren } from "react"
 import Navigation from "./Navigation"
+import { Helmet } from "react-helmet-async"
 
 interface Props {
   title?: string
@@ -14,9 +14,9 @@ const Layout: FC<Props> = ({
 }: PropsWithChildren<Props>) => {
   return (
     <div>
-      <Head>
+      <Helmet>
         <title>{`${title} - Shoptree Affiliate`}</title>
-      </Head>
+      </Helmet>
 
       {!authPage && <Navigation toggleMenu={() => null} />}
 

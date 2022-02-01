@@ -1,4 +1,4 @@
-import { IUser } from "../utils/types/user.types"
+import { IUser } from "../utils/types"
 
 export interface State {
   user: IUser | null

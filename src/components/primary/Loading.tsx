@@ -1,12 +1,12 @@
-import Head from "next/head"
 import { FC } from "react"
+import { Helmet } from "react-helmet"
 
 export const Loading: FC = () => {
   return (
     <div>
-      <Head>
+      <Helmet>
         <title>Shoptree Affiliate</title>
-      </Head>
+      </Helmet>
       <div className="flex h-screen w-screen flex-col justify-center align-middle">
         <svg
           className="my-auto mx-auto h-10 w-10 animate-spin text-center text-primary-green "

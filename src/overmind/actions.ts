@@ -1,5 +1,5 @@
 import { Context } from "."
-import { IUser } from "../utils/types/user.types"
+import { IUser } from "../utils/types"
 
 export const onInitializeOvermind = async ({
   state,

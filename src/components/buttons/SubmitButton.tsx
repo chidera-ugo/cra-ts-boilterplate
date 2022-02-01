@@ -1,9 +1,11 @@
+import { FC } from "react"
+
 interface Props {
-  buttonText: string
+  text: string
   isSubmitting: boolean
 }
 
-const SubmitButton: React.FC<Props> = ({ buttonText, isSubmitting }: Props) => {
+const SubmitButton: FC<Props> = ({ text, isSubmitting }: Props) => {
   return (
     <button
       type="submit"
@@ -31,7 +33,7 @@ const SubmitButton: React.FC<Props> = ({ buttonText, isSubmitting }: Props) => {
         </svg>
       )}
 
-      {isSubmitting ? "" : buttonText}
+      {isSubmitting ? "" : text}
     </button>
   )
 }

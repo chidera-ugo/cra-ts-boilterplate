@@ -9,7 +9,7 @@ export const api = {
 
     if (!token) return null
 
-    const url = `${process.env.NEXT_APP_BASE_URL}/affliate/profile`
+    const url = `${process.env.REACT_APP_BASE_URL}/affliate/profile`
     const response = await axios.get(url, {
       headers: {
         Authorization: `Bearer ${token}`,
